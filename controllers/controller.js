@@ -13,13 +13,10 @@ module.exports = {
   mymessage: async (req, res, next) => {
     try {
       const id = req.params.id;
-      let message = await Message.findOne({ where: { id:id } }) 
-      if (message) {
-        res.render("mymessage", {
-          name: message.name,
-          message: message.message,
-        });
-      }
+      await Message.findOne({ where: { id: id } }).then((msg) => {
+        if (!msg) return res.status(404).end();
+        res.render("mymessage", { name: msg.name, message: msg.message });
+      });
     } catch (error) {
       console.log(error);
       next(error);
