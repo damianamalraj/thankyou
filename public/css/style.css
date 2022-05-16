@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(49, 43, 38);
+  font-family: "Dancing Script", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+.wrapper{
+    display: flex;
+    border: 2px solid rgb(184, 21, 48)
+}
+.single-message{
+    margin:auto;
+    color:yellow;
+}

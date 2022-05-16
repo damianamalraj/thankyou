@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thanks David...!!!!</h1>
+
+    <section class="thanks-section">
+        <h3>Thank you for choosing teaching as your profession(We all benefit from it)</h3>
+        <h3>Thank you for sharing your knowledge with us and help us understanding the things as they are..</h3>
+        <h3>Thank you for encouraging us all the time, trying things in our own way.. </h3>
+        <h3>Thank you for guiding us all the from knowing what is what to actually implementing it..</h3>
+        <h3>Thank you for tolerating our grasping power and encouraging our doubts without any hesitation...</h3>
+        <h3>Thank you for being that person whom we can look up to whenever we are struck.. You were just a message away all the time..</h3>
+    </section>
+
+    <section class="wish-section">
+        <h3>We wish you to extend your support and guidance for the next levels of our coding career...</h3>
+        <h3>And, Please don't hesitate to reveal us your diet secrets if THAT is keeping you energetic and enthusiastic throughout the day!!!</h3>
+    </section>
+
+    <section>
+    <h3>Although we cannot thank you enough just by saying a 'Thank you', this is the least we can do to thank you from the bottom of our hearts</h3>
+    <h3>So, with utmost gratitude, we would like to say...</h3>
+    <h1>Thank you....</h1>
+    </section>
+
+    <h3>We would like you to know what we REALLY want to tell you..</h3>
+    <h5>Please check it out all our words for you</h5>
+    <ul class="names-list">
+        <% for(var i=0; i<allNames.length; i++) {%>
+                <a href="/myMessage/<%= allNames[i].id%>" class="single-name">
+                    <%= allNames[i].name %></a>
+            <% } %>
+    </ul>
+</body>
+</html>
