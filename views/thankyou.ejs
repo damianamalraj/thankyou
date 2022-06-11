@@ -10,21 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Thank You</title>
 </head>
-<body>
+<body class="main-page">
     <h1>Thanks David...!!!!</h1>
 
     <section class="thanks-section">
-        <h3>Thank you for choosing teaching as your profession(We all benefit from it)</h3>
-        <h3>Thank you for sharing your knowledge with us and help us understanding the things as they are..</h3>
-        <h3>Thank you for encouraging us all the time, trying things in our own way.. </h3>
-        <h3>Thank you for guiding us all the from knowing what is what to actually implementing it..</h3>
-        <h3>Thank you for tolerating our grasping power and encouraging our doubts without any hesitation...</h3>
-        <h3>Thank you for being that person whom we can look up to whenever we are struck.. You were just a message away all the time..</h3>
+        <h3><span class="thanku-span"> Thank You </span> for choosing teaching as your profession(We all benefit from it)</h3>
+        <h3><span class="thanku-span"> Thank You </span> for sharing your knowledge with us and help us understanding the things as they are..</h3>
+        <h3><span class="thanku-span"> Thank You </span> for encouraging us all the time, trying things in our own way.. </h3>
+        <h3><span class="thanku-span"> Thank You </span> for guiding us all the from knowing what is what to actually implementing it..</h3>
+        <h3><span class="thanku-span"> Thank You </span> for tolerating our grasping power and encouraging our doubts without any hesitation...</h3>
+        <h3><span class="thanku-span"> Thank You </span> for being that person whom we can look up to whenever we are struck.. You were just a message away all the time..</h3>
     </section>
 
     <section class="wish-section">
         <h3>We wish you to extend your support and guidance for the next levels of our coding career...</h3>
-        <h3>And, Please don't hesitate to reveal us your diet secrets if THAT is keeping you energetic and enthusiastic throughout the day!!!</h3>
+        <h3>And, Please don't hesitate to reveal us any those secrets which are keeping you energetic and enthusiastic throughout the day!!!</h3>
     </section>
 
     <section>
@@ -33,11 +33,11 @@
     <h1>Thank you....</h1>
     </section>
 
-    <h3>We would like you to know what we REALLY want to tell you..</h3>
-    <h5>Please check it out all our words for you</h5>
+    <h2>We would like you to know what we REALLY want to tell you..</h2>
+    <h3>Please check out all our words for you</h3>
     <ul class="names-list">
         <% for(var i=0; i<allNames.length; i++) {%>
-                <a href="/myMessage/<%= allNames[i].id%>" class="single-name">
+                <a class="all-names" href="/myMessage/<%= allNames[i].id%>" class="single-name">
                     <%= allNames[i].name %></a>
             <% } %>
     </ul>
